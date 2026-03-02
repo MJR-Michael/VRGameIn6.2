@@ -1853,12 +1853,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MiniColumn
   cubePrefab: {fileID: 6968706621888081689, guid: fab5110cc2ce37a48ae84f16b13f8286, type: 3}
+  container: {fileID: 821856974}
   height: 5
   length: 3
   horzSpacing: 0
-  horzSpacer: 2
-  vertSpacing: 3
-  vertSpacer: 2
+  horzSpacer: 1.5
+  vertSpacing: 0.5
+  vertSpacer: 1
 --- !u!4 &821856976
 Transform:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 public class MiniColumn : MonoBehaviour
 {
     [SerializeField] GameObject cubePrefab;
+    [SerializeField] GameObject container;
     [SerializeField] float height;
     [SerializeField] float length;
     [SerializeField] float horzSpacing;
@@ -23,6 +24,17 @@ public class MiniColumn : MonoBehaviour
                 horzSpacing = horzSpacing + horzSpacer;
             }
             vertSpacing = vertSpacing + vertSpacer;
+        }
+    }
+
+    void Update()
+
+    //switch to new input system soon
+    //inputActions.Player.RemoveCollider.performed
+    {
+        if (Input.GetButtonDown("DeleteAll"))
+        {
+            Destroy(container);
         }
     }
 }
