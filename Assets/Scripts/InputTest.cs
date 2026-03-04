@@ -6,7 +6,6 @@ public class InputTest : MonoBehaviour
 public InputActionProperty testActionValue;
 public InputActionProperty testActionButton;
 
-
     void Start()
     {
         

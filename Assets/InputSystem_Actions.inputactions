@@ -82,7 +82,16 @@
                     "name": "Sprint",
                     "type": "Button",
                     "id": "641cd816-40e6-41b4-8c3d-04687c349290",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "BlowUpBoxes",
+                    "type": "Button",
+                    "id": "41ef53f4-ac23-4458-aebe-a1a74f05e270",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -91,6 +100,15 @@
                     "name": "RemoveBoxes",
                     "type": "Button",
                     "id": "f331f1d3-f2c8-4418-bb50-60e543590ccb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ResetBoxes",
+                    "type": "Button",
+                    "id": "67c2c96e-c23d-47d1-9d57-42fe01212e18",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -486,11 +504,33 @@
                 {
                     "name": "",
                     "id": "cc5f6805-857b-48c1-9c48-4add7cf4965c",
-                    "path": "<Keyboard>/1",
+                    "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "RemoveBoxes",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33c144c7-5cc2-43fb-a071-1bcc9d9a87bc",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ResetBoxes",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "44d18360-aec3-4d7c-bfca-eff0b7e55048",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "BlowUpBoxes",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

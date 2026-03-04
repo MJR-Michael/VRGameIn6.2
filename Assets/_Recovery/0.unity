@@ -150,20 +150,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380340253}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &56643789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Player/ResetBoxes
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 67c2c96e-c23d-47d1-9d57-42fe01212e18
 --- !u!114 &106155303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,20 +883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ActionId: c4990d70-7b8a-4ce1-b03c-da86716b8352
---- !u!114 &683280913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Player/BlowUpBoxes
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: 41ef53f4-ac23-4458-aebe-a1a74f05e270
 --- !u!114 &684434304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,20 +1192,6 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 1
---- !u!114 &729543714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
-  m_Name: Player/RemoveBoxes
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
-  m_Asset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  m_ActionId: f331f1d3-f2c8-4418-bb50-60e543590ccb
 --- !u!1 &731576926
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +1832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 821856976}
+  - component: {fileID: 821856975}
   m_Layer: 0
   m_Name: MiniWall
   m_TagString: Untagged
@@ -1881,6 +1840,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &821856975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821856974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8a2ebb1f88db64590986857ed69500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MiniColumn
+  cubePrefab: {fileID: 6968706621888081689, guid: fab5110cc2ce37a48ae84f16b13f8286, type: 3}
+  container: {fileID: 0}
+  height: 5
+  length: 3
+  horzSpacing: 0
+  horzSpacer: 1.5
+  vertSpacing: 0.5
+  vertSpacer: 1
 --- !u!4 &821856976
 Transform:
   m_ObjectHideFlags: 0
@@ -1890,11 +1869,11 @@ Transform:
   m_GameObject: {fileID: 821856974}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2037322468}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &831484972
 GameObject:
@@ -4775,7 +4754,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.1109, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1862029649}
@@ -5777,63 +5756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_ActionId: 39bbf1ac-21a3-413d-90f6-6dbf6efeaabe
---- !u!1 &2037322466
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2037322468}
-  - component: {fileID: 2037322467}
-  m_Layer: 0
-  m_Name: MiniWallManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2037322467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037322466}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8a2ebb1f88db64590986857ed69500, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MiniColumn
-  cubePrefab: {fileID: 6968706621888081689, guid: fab5110cc2ce37a48ae84f16b13f8286, type: 3}
-  container: {fileID: 821856974}
-  height: 5
-  length: 3
-  horzSpacing: 0
-  horzSpacer: 1.5
-  vertSpacing: 0.5
-  vertSpacer: 1
-  power: 20
-  blowUpBoxAction: {fileID: 683280913}
-  resetBoxAction: {fileID: 56643789}
-  removeBoxAction: {fileID: 729543714}
---- !u!4 &2037322468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2037322466}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10, y: 2, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 821856976}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &2050567687
 GameObject:
   m_ObjectHideFlags: 0
@@ -9834,4 +9756,4 @@ SceneRoots:
   - {fileID: 1359709374}
   - {fileID: 555750258}
   - {fileID: 6199973837058541875}
-  - {fileID: 2037322468}
+  - {fileID: 821856976}
